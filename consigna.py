@@ -1,6 +1,6 @@
 import unittest
 def buscar_datos(*args, **kwargs):
-    for key, person_data in database.items():
+    for key, person_data in kwargs.items():
         if all(arg in person_data.values() for arg in args):
             return key  
     return None 
